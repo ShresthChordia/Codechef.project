@@ -3,107 +3,70 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edges">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 40px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-    }
-
-    h1 {
-      font-size: 3em;
-      font-weight: bold;
-      background: linear-gradient(90deg, #ff00ff, #00ffff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .description {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-
-    .social-links a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      color: white;
-      text-decoration: none;
-      background: #ff007f;
-      border-radius: 5px;
-      transition: all 0.3s;
-      font-weight: bold;
-    }
-
-    .social-links a:hover {
-      background: #ff4500;
-      transform: scale(1.1);
-    }
-
-    .section {
-      margin-top: 40px;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      margin: 10px 0;
-      font-size: 1.2em;
-    }
-  </style>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <h1>Hii, I'm Shresth Chordia</h1>
-    <p class="description">A passionate beginner in frontend developement crafting stunning, interactive, and high-performance
-      websites.</p>
+  <nav class="navbar">
+    <a href="#" class="logo">PORTFOLIO</a>
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#">PORTFOLIO</a></li>
+      <li><a href="#">SERVICE</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
 
-    <div class="social-links">
-      <a href="https://github.com/ShresthChordia" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/shresth-chordia-0259b5321/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="Mailto:shresthchordia18@gmail.com">Email</a>
-    </div>
+  <section id="home" class="home">
+    <div class="home-info">
+      <h1>SHRESTH CHORDIA</h1>
+      <h2>I'm a Frontend Developer</h2>
+      <p>
+        Hi, I'm Shresth Chordia, a passionate and self-driven developer with a strong interest in building intuitive and dynamic web applications. I enjoy solving real-world problems through clean and efficient code. With a keen eye for design and functionality, I strive to create seamless user experiences.
 
-    <div class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS, Python</li>
-        <li>React, Tailwind CSS</li>
-        <li>Responsive Design</li>
-      </ul>
+I am always eager to learn new technologies and improve my skills. Whether it's front-end development, backend logic, or problem-solving, I take on every challenge with enthusiasm and curiosity.
+      </p>
+      <div class="btn-sci">
+        <a href="resume_guide_2020.pdf" class="btn">Download CV</a>
+      </div>
     </div>
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-items">
+          <img src="RDK.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="section">
-      <h2>Projects</h2>
-      <ul>
-        <li><b>Portfolio Website</b> - A personal site showcasing my work.</li>
-        <li><b>Weather Working model</b> - A real-time weather and its details reader model</li>
-        <li><b>Task Manager</b> - A to-do list with intuitive UI.</li>
-      </ul>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+        Skills
+💻 Programming Languages: C, C++, Python
+🌐 Web Development: HTML, CSS, JavaScript, React, Tailwind CSS
+🚀 Tools & Platforms: Git, GitHub, VS Code
+🎯 Other Skills: Problem-Solving, Competitive Programming, Debugging </p>
+    
+    
+  </section>
+  <section id="contact" class="contact">
+    <h2> Contact details</h2>
+    <p>Here are my contact details:</p>
+    <div class="contact-info">
+    <ul>
+      <li>Email: <a href="mailto:shresthchordia18@gmail.com">shresthchordia18@gmail.com</a></li>
+      <li>Mobile: <a href="tel:+917597890134">+91-7597890134</a></li>
+      <li><a href="https://github.com/ShresthChordia"><box-icon type='logo' name='github'></box-icon> GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/shresth-chordia-0259b5321/"><box-icon type='logo' name='linkedin'></box-icon> LinkedIn</a></li>
+    </ul>
     </div>
-  </div>
+  </section>
 </body>
 
 </html>
